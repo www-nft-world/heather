@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    			Live Stream    </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style> 
+#container { 	
+margin: 0px auto; 
+width: 500px; 	
+height: 375px; 	
+border: 0px #333 solid; } 
+
+#videoElement { 	
+width: 320px; 
+	height: 255px; 	
+background-color: #bfffea39; } 
+</style>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+
+
+
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="footer-container">
+
+        <div class="box-container">
+        		   <div class="box"><br><br>
+                <h3 color="red">Mason Is Out Of Service</h3>
+             
+               			
+               				       </div> 
+
+               
+
+        </div>
+
+        <div class="credit"></div>
+
+    </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- javascript part  -->
+<script>
+
+let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () =>{
+    navbar.classList.toggle('active');
+    menu.classList.toggle('fa-times');
+}
+
+window.onscroll = () =>{
+    navbar.classList.remove('active');
+    menu.classList.remove('fa-times');
+}
+
+</script>
+
+</body>
+</html>
